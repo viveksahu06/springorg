@@ -5,12 +5,13 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- bean definitions here -->
-    <bean id="petrolEngine" class="org.example.PetrolEngine"></bean>
-    <bean id="dieselEngine" class="org.example.DieselEngine"></bean>
+<!--    <bean id="petrolEngine" class="org.example.PetrolEngine"></bean>-->
+<!--    <bean id="dieselEngine" class="org.example.DieselEngine"></bean>-->
+    <bean id="engine" class="org.example.PetrolEngine"></bean>
 
-
-    <bean id="car" class="org.example.Car">
-        <property name="engine" ref="dieselEngine"/>
-
+    <bean id="car" class="org.example.Car" scope="prototype" autowire="byName">
+<!--    <property name="engine" ref="petrolEngine"/>-->
+<!--        <constructor-arg  name="engine" ref="dieselEngine"/>-->
+<!--koi bhi naam se mil jaye id-->
     </bean>
 </beans>

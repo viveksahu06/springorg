@@ -7,7 +7,7 @@ public class PetrolEngine implements Engine{
     }
     @Override
     public int start() {
-        System.out.println("Engine Started...");
+        System.out.println("petrol Engine Started...");
         return 1;
     }
 }

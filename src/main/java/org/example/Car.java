@@ -1,10 +1,16 @@
 package org.example;
 
 public class Car {
+
+
     Engine engine;
    Car(){
        System.out.println("car constructor is called");
    }
+    public Car(Engine engine) {
+        this.engine = engine;
+    }
+
     public void setEngine(Engine engine) {
         System.out.println("car setter Method...");
         this.engine = engine;
